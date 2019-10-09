@@ -4,7 +4,12 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitle: `Hashir Baig`,
+    siteTitleAlt: `Hashir Baig - Mobile Apps | Web | AWS Cloud`,
+    siteHeadline: `Hashir Baig - Freelancer | iOS & Android Developer | AWS Cloud Solutions`,
+    siteDescription: `Welcome to my Portfolio website. I have expertise in Native Android Development, React Native, Flutter, Desktop Apps and a lot more. I can help you in developing and designing a solution for your project using AWS Cloud solutions.`,
+    siteLanguage: `en`,
+    author: `Hashir Baig`,
   },
   plugins: [
     {
