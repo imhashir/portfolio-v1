@@ -26,24 +26,24 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9ce69ba01ed041b13056.js"
+    "url": "webpack-runtime-1daecc8798b8030fc817.js"
   },
   {
     "url": "commons-07ac690321dc7254e057.js"
   },
   {
-    "url": "app-3178ef3d49666073e415.js"
+    "url": "app-5b65b3d7c63eae197202.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-cac8992892fa788143eb.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "531df9f9ceed9523b1a169e7911ba5f6"
+    "revision": "cb4363ed58d31f42e6a39351c64a790c"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "f5a24dccc25635cef152f1b131e27337"
+    "revision": "5f48d45f15a7ddd4cf1efa643709ab7b"
   },
   {
     "url": "manifest.json",
@@ -70,12 +70,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/meethashir`), ``)
+  pathname = pathname.replace(new RegExp(`^/portfolio-v1`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/meethashir/app-3178ef3d49666073e415.js`))) {
+  if (!resources || !(await caches.match(`/portfolio-v1/app-5b65b3d7c63eae197202.js`))) {
     return await fetch(event.request)
   }
 
@@ -88,7 +88,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/meethashir/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/portfolio-v1/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
