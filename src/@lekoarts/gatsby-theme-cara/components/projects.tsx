@@ -12,7 +12,7 @@ const Projects = ({ offset }: { offset: number }) => {
 
   const logos = useStaticQuery(graphql
     `query {
-      logos: allFile(filter: {relativeDirectory: {eq: "logos"}}) {
+      logos: allFile(filter: {relativeDirectory: {eq: "logos"}}, sort: {fields: name}) {
         edges {
           node {
             childImageSharp {

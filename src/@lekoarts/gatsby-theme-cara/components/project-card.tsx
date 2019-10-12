@@ -39,7 +39,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => {
       }}
     >
       <Img
-        fixed={logo}
+        fixed={logo.node.childImageSharp.fixed}
       />
       <div
         sx={{
