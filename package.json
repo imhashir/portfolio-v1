@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "name": "Hashir",
+  "description": "Freelancer | Android & Developer | AWS Cloud Solutions",
   "version": "0.0.9",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Hashir Baig <meethashirb@gmail.com>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
