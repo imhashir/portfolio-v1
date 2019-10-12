@@ -31,12 +31,12 @@ const Projects = ({ offset }: { offset: number }) => {
     <div>
       <Divider
         bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
+        sx={{ clipPath: `polygon(0 10%, 100% 20%, 100% 90%, 0 80%)` }}
         speed={-0.2}
-        offset={1.1}
+        offset={offset}
         factor={2}
       />
-      <Content speed={0.4} offset={offset + 0.2} factor={2}>
+      <Content speed={0.2} offset={offset + 0.2} factor={2}>
         <Inner>
           <div
             sx={{
@@ -50,7 +50,7 @@ const Projects = ({ offset }: { offset: number }) => {
           </div>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={offset} factor={2}>
+      <Divider speed={0.1} offset={offset + 0.6} factor={2}>
         <UpDown>
           <SVG icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
           <SVG icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
